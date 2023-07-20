@@ -6,8 +6,8 @@
     <meta name="description" content="Pomodoro online, totalmente gratuito, use metodo pomodoro e seja mais produtivo(a).">
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>PomoTime - Pomodoro Online</title>
     <script defer src="assets/js/main.js"></script>
+    <title>PomoTime - Pomodoro Online</title>
 </head>
 <body>
     <header>
@@ -27,12 +27,13 @@
         <section class="time" id="timeCount">
             <div class="timeDisplay" id="tDisplay">
                 <img id="timeHomeImg" src="assets/svg/alarm_home.svg" alt="">
-                <span class="disMin">00</span>
-                <span class="disSec">.00</span>
+                <span id="sMin" class="disMin">25</span>
+                <span id="sSec" class="disSec">:00</span>
             </div>
             
             <div class="timeButtons" id="tButtons">
                 <button id="buttonStart"><img class="svg-icon-action" src="assets/svg/play.svg" alt=""></button>
+                <button id="buttonPause"><img class="svg-icon-action" src="assets/svg/pause.svg" alt=""></button>
                 <div class="buttonsTimeSet">
                     <button id="buttonPomodoro">POMODORO <strong>20 MIN</strong></button>
                     <button id="buttonDescanso">DESCANSO <strong>5 MIN</strong></button>

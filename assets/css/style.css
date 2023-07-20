@@ -69,9 +69,7 @@ header nav ul li .aContact:hover {
     background-color: #fafafa;
 }
 
-/* Tentar refatorar o codigo; E o html */
-
-/* main {
+main {
     height: 100%;
     width: 100%;
     display: flex;
@@ -81,6 +79,7 @@ header nav ul li .aContact:hover {
     margin-top: 10em;
 }
 
+
 .time .timeDisplay img {
     height: 60px;
     width: 60px;
@@ -89,14 +88,15 @@ header nav ul li .aContact:hover {
 .time .timeDisplay {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
 }
 
-.time .timeDisplay .disMin {
+.time .timeDisplay .disMin,
+.disSec {
     font-size: 10em;
-}
-
-.time .timeDisplay .disSec {
-    font-size: 5em;
 }
 
 .timeButtons {
@@ -111,6 +111,9 @@ header nav ul li .aContact:hover {
 
 .buttonsTimeSet {
     display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 20px;
 }
 
 
@@ -125,18 +128,29 @@ header nav ul li .aContact:hover {
     transition: 150ms ease-in-out;
 }
 
-#buttonStart {
+#buttonStart,
+#buttonPause {
     border-radius: 100%;
     padding: 30px;
-    align-items: center;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    margin: 0;
 }
 
-#buttonStart img {
+#buttonStart:active,
+#buttonPause:active {
+    background: #04ad7581;
+}
+#buttonStart img,
+#buttonPause img {
     height: 40px;
     width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttonPause {
+    display: none;
 }
 
 .timeButtons button:hover {
@@ -145,4 +159,5 @@ header nav ul li .aContact:hover {
 
 .timeButtons button strong {
     color: rgba(255, 255, 255, 0.726)
-} */
+}
+ 
