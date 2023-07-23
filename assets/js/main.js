@@ -13,16 +13,14 @@ let intervalo;
 let segundos;
 let min;
 let sec;
-let isPaused = false;
-let tempoRestante = 0; // Variável para rastrear o tempo restante após a pausa
-let tempoPause = 0;
+let paused = false;
+let timeLeft = 0;
 
-// Função do temporizador
 function pomodoro(tempo) {
   segundos = tempo * 60;
 
   intervalo = setInterval(function() {
-    if (!isPaused) {
+    if (!paused) {
       const minutos = Math.floor(segundos / 60);
       const segundosRest = segundos % 60;
 
@@ -50,76 +48,53 @@ function pomodoro(tempo) {
   }, 1000);
 }
 
-buttonStart.addEventListener('click', () => {
-  console.log(tempoPause)
-  console.log(tempoRestante)
-  if(tempoRestante > 100000) {
-    tempoRestante = 1500;
-  }
-  if(tempoRestante == 30000) {
-    tempoRestante = 300
-  }
-  if(isNaN(tempoRestante)) {
+buttonStart.addEventListener('click', () => { //Chat GPT
+  if (timeLeft > 0) {
     clearInterval(intervalo);
-    isPaused = false;
-    alert('Você está louco(a), pare de clicar sem parar!!')
-  }
-  if(isPaused === true) {
-    clearInterval(intervalo);
-    isPaused = false;
-    tempoPause = tempoRestante;
-    pomodoro(tempoPause / 60);
+    paused = false;
     buttonStart.style.display = 'none';
     buttonPause.style.display = 'block';
+    pomodoro(timeLeft / 60);
   } else {
+
     clearInterval(intervalo);
-    isPaused = false;
+    paused = false;
     pomodoro(tempoDefault);
     buttonStart.style.display = 'none';
     buttonPause.style.display = 'block';
   }
 });
 
-// Função de pausa
-buttonPause.addEventListener('click', () => {
-  console.log(tempoRestante)
-  clearInterval(intervalo)
-  if (isPaused == false) {
-    isPaused = true;
+buttonPause.addEventListener('click', () => { // chat GPT
+  if (paused == false) {
+    clearInterval(intervalo);
+    paused = true;
     buttonStart.style.display = 'block';
     buttonPause.style.display = 'none';
+    timeLeft = segundos; // Salva o tempo restante em segundos
   }
-  clearInterval(intervalo);
-  buttonStart.style.display = 'block';
-  buttonPause.style.display = 'none';
-  tempoRestante = min * 60 + sec; // Salva o tempo restante após a pausa
 });
 
-
 buttonPomodoro.addEventListener('click', () => {
-  if(isPaused == false) {
-    buttonStart.style.display = 'block';
-    buttonPause.style.display = 'none';
-  } else {
-    buttonStart.style.display = 'none';
-    buttonPause.style.display = 'block';
-  }
+  timeLeft = 0;
   clearInterval(intervalo);
   tempoDefault = 25;
   sMin.innerText = 25;
   sSec.innerText = ':0' + 0;
+  if(paused == false) {
+    buttonStart.style.display = 'block';
+    buttonPause.style.display = 'none';
+  }
 });
 
 buttonDescanso.addEventListener('click', () => {
-  if(isPaused == false) {
-    buttonStart.style.display = 'block';
-    buttonPause.style.display = 'none';
-  } else {
-    buttonStart.style.display = 'none';
-    buttonPause.style.display = 'block';
-  }
   clearInterval(intervalo);
+  timeLeft = 0;
   tempoDefault = 5;
   sMin.innerText = '0' + 5;
   sSec.innerText = ':0' + 0;
+  if(paused == false) {
+    buttonStart.style.display = 'block';
+    buttonPause.style.display = 'none';
+   }
 });
