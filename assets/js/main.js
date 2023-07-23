@@ -24,7 +24,7 @@ function pomodoro(tempo) {
       const minutos = Math.floor(segundos / 60);
       const segundosRest = segundos % 60;
 
-      if (segundos <= 0) {
+      if (segundos < 0) {
         clearInterval(intervalo);
         return;
       }
