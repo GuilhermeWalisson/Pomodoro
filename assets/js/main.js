@@ -15,6 +15,14 @@ let min;
 let sec;
 let paused = false;
 let timeLeft = 0;
+let songs = {
+  music_1: "./assets/audio/music_lofi_1.mp3",
+  music_2: "./assets/audio/music_lofiCYFMH_2.mp3",
+  music_3: "./assets/audio/.mp3",
+  music_4: "./assets/audio/.mp3"
+};
+let music = songs.music_2;
+let song = new Audio(music);
 
 function pomodoro(tempo) {
   segundos = tempo * 60;
@@ -24,9 +32,12 @@ function pomodoro(tempo) {
       const minutos = Math.floor(segundos / 60);
       const segundosRest = segundos % 60;
 
-      if (segundos < 0) {
+      if (segundos === 0) {
         clearInterval(intervalo);
-        return;
+        song.play();
+        setTimeout(() => {
+          song.pause();
+        }, 60000);
       }
 
       min = minutos;
@@ -91,7 +102,7 @@ buttonPomodoro.addEventListener("click", () => {
 buttonDescanso.addEventListener("click", () => {
   clearInterval(intervalo);
   timeLeft = 0;
-  tempoDefault = 5;
+  tempoDefault = 0.10;
   sMin.innerText = "0" + 5;
   sSec.innerText = ":0" + 0;
   if (paused == false) {
