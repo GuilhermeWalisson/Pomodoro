@@ -8,7 +8,6 @@ const sSec = document.getElementById("sSec");
 
 let tempoDefault = 25; // 25 minutos (tempo em minutos)
 const tempoDescanso = 5; // 5 minutos (tempo em minutos)
-
 let intervalo;
 let segundos;
 let min;
@@ -18,8 +17,8 @@ let timeLeft = 0;
 let songs = {
   music_1: "./assets/audio/music_lofi_1.mp3",
   music_2: "./assets/audio/music_lofiCYFMH_2.mp3",
-  music_3: "./assets/audio/.mp3",
-  music_4: "./assets/audio/.mp3"
+  music_3: "./assets/audio/music_interistellar_3.mp3",
+  music_4: "./assets/audio/music_yoasobi_4.mp3"
 };
 let music = songs.music_2;
 let song = new Audio(music);
