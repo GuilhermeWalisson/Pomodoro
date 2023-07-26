@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/btnConfig.js"></script>
     <title>PomoTime - Pomodoro Online</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
                 <li>
                     <a class="aContact" title="Entrar em contato" href="#" targte="_blank">Contato</a>
                 </li>
+                <li><a class="btn-config" id="btn-config" title="configurações" href="#" targte="_blank"><img src="assets/svg/config.svg" alt="icone de configuração"></a></li>
             </ul>
         </nav>
     </header>
@@ -38,6 +40,81 @@
                     <button id="buttonPomodoro">POMODORO <strong>25 MIN</strong></button>
                     <button id="buttonDescanso">DESCANSO <strong>5 MIN</strong></button>
                 </div>
+            </div>
+        </section>
+
+        <section class="config-container" id="config-container">
+            <div class="config-title">
+                <h2>CONFIGURAÇÕES</h2>
+            </div>
+
+            <div class="bg-config">
+                <div class="bg-config-color-title">
+                    <img src="assets/svg/palett.svg">
+                    <h3>Cor de Fundo</h3>
+                </div>
+                <div class="bg-config-color">
+                    <button class="btn-bg-default" id="btn-bg-default"></button>
+                    <button class="btn-bg-pink" id="btn-bg-pink"></button>
+                    <button class="btn-bg-blue" id="btn-bg-blue"></button>
+                    <button class="btn-bg-dark" id="btn-bg-dark"></button>
+                </div>
+            </div>
+            <div class="config-song">
+                <div class="config-song-title">
+                    <img src="assets/svg/music_library.svg">
+                    <h3>Definir Musica</h3>
+                </div>
+                <ul>
+                    <li>
+                        <div>
+                            <img src="assets/svg/music.svg">
+                            <p>Musica 1</p>
+                            <button id="btn-play-1">
+                                 <img src="assets/svg/play.svg">
+                            </button>
+                            <button id="btn-check-1">
+                                <img src="assets/svg/plus.svg">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="assets/svg/music.svg">
+                            <p>Musica 2</p>
+                            <button id="btn-play-2">
+                                 <img src="assets/svg/play.svg">
+                            </button>
+                            <button id="btn-check-2">
+                                <img src="assets/svg/plus.svg">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="assets/svg/music.svg">
+                            <p>Musica 3</p>
+                            <button id="btn-play-3">
+                                 <img src="assets/svg/play.svg">
+                            </button>
+                            <button id="btn-check-3">
+                                <img src="assets/svg/plus.svg">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="assets/svg/music.svg">
+                            <p>Musica 4</p>
+                            <button id="btn-play-4">
+                                 <img src="assets/svg/play.svg">
+                            </button>
+                            <button id="btn-check-4">
+                                <img src="assets/svg/plus.svg">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
 
