@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script defer src="assets/js/main.js"></script>
     <script defer src="assets/js/btnConfig.js"></script>
+    <script defer src="assets/js/btnColorConfig.js"></script>
     <title>PomoTime - Pomodoro Online</title>
 </head>
-<body>
+<body id="body">
     <header>
         <div class="icon-or-title">
             <img class="logoSvg" src="assets/svg/time_alarm.svg" alt="time Logo.svg">
@@ -49,15 +50,18 @@
             </div>
 
             <div class="bg-config">
-                <div class="bg-config-color-title">
-                    <img src="assets/svg/palett.svg">
-                    <h3>Cor de Fundo</h3>
-                </div>
                 <div class="bg-config-color">
-                    <button class="btn-bg-default" id="btn-bg-default"></button>
-                    <button class="btn-bg-pink" id="btn-bg-pink"></button>
-                    <button class="btn-bg-blue" id="btn-bg-blue"></button>
-                    <button class="btn-bg-dark" id="btn-bg-dark"></button>
+                    <div class="bg-config-color-title">
+                        <img src="assets/svg/palett.svg">
+                        <h3>Cor de Fundo</h3>
+                    </div>
+                    <div class="bg-config-colors">
+                        <button class="btn-bg-default" id="btn-bg-default"></button>
+                        <button class="btn-bg-red" id="btn-bg-red"></button>
+                        <button class="btn-bg-purple" id="btn-bg-purple"></button>
+                        <button class="btn-bg-dark" id="btn-bg-dark"></button>
+                        <button class="btn-bg-orange" id="btn-bg-orange"></button>
+                    </div>
                 </div>
             </div>
             <div class="config-song">
@@ -65,53 +69,61 @@
                     <img src="assets/svg/music_library.svg">
                     <h3>Definir Musica</h3>
                 </div>
-                <ul>
+                <ul id="songs-list">
                     <li>
                         <div>
                             <img src="assets/svg/music.svg">
                             <p>Musica 1</p>
-                            <button id="btn-play-1">
-                                 <img src="assets/svg/play.svg">
-                            </button>
-                            <button id="btn-check-1">
-                                <img src="assets/svg/plus.svg">
-                            </button>
+                            <div class="btns-play">  
+                                <button id="btn-play-1">
+                                     <img src="assets/svg/play.svg">
+                                </button>
+                                <button id="btn-check-1">
+                                    <img src="assets/svg/plus.svg">
+                                </button>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="assets/svg/music.svg">
                             <p>Musica 2</p>
-                            <button id="btn-play-2">
-                                 <img src="assets/svg/play.svg">
-                            </button>
-                            <button id="btn-check-2">
-                                <img src="assets/svg/plus.svg">
-                            </button>
+                            <div class="btns-play">
+                                <button id="btn-play-2">
+                                     <img src="assets/svg/play.svg">
+                                </button>
+                                <button id="btn-check-2">
+                                    <img src="assets/svg/plus.svg">
+                                </button> 
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="assets/svg/music.svg">
                             <p>Musica 3</p>
-                            <button id="btn-play-3">
-                                 <img src="assets/svg/play.svg">
-                            </button>
-                            <button id="btn-check-3">
-                                <img src="assets/svg/plus.svg">
-                            </button>
+                            <div class="btns-play">
+                                <button id="btn-play-3">
+                                     <img src="assets/svg/play.svg">
+                                </button>
+                                <button id="btn-check-3">
+                                    <img src="assets/svg/plus.svg">
+                                </button>           
+                            </div>
                         </div>
                     </li>
                     <li>
                         <div>
                             <img src="assets/svg/music.svg">
                             <p>Musica 4</p>
-                            <button id="btn-play-4">
-                                 <img src="assets/svg/play.svg">
-                            </button>
-                            <button id="btn-check-4">
-                                <img src="assets/svg/plus.svg">
-                            </button>
+                            <div class="btns-play">
+                                <button id="btn-play-4">
+                                     <img src="assets/svg/play.svg">
+                                </button>
+                                <button id="btn-check-4">
+                                    <img src="assets/svg/plus.svg">
+                                </button>                                
+                            </div>
                         </div>
                     </li>
                 </ul>
