@@ -114,7 +114,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: center; */
 }
 
 .time .timeDisplay .disMin,
@@ -278,7 +277,6 @@ main {
 }
 
 .config-container .bg-config-color button {
-    /* background-color: rgb(141, 99, 255); */
     padding: 30px;
     border-radius: 10px;
     border: none;
