@@ -1,0 +1,250 @@
+@media only screen and (max-width: 800px) {
+
+    header .icon-or-title h1 {
+        height: 100%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    header .icon-or-title img {
+        height: 25px;
+        width: 25px;
+        fill: white;
+    }
+    
+    header nav ul li .aContact {
+        text-decoration: none;
+        padding: 5px;
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        font-size: 12px;
+        transition: 150ms ease-in-out;
+    }
+    
+    header nav ul li .btn-config img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .time .timeDisplay img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    
+    .time .timeDisplay .disMin,
+    .disSec {
+        font-size: 23vw;
+    }
+    
+    .timeButtons button {
+        border: none;
+        padding: 10px;
+        font-size: 4vw;
+        background: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 150ms ease-in-out;
+    }
+    
+    #buttonStart,
+    #buttonPause {
+        border-radius: 100%;
+        padding: 5vw;
+        display: flex;
+        margin: 0;
+    }
+
+    #buttonPause {
+        display: none;
+    }
+    
+    #buttonStart img,
+    #buttonPause img {
+        height: 25px;
+        width:  25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .config-container {
+        display: none;
+        height: 100%;
+        width: 85vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .btn-back {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: auto;
+        margin: 10px;
+        gap: 10px;
+    }
+    
+    .btn-back a {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        box-shadow: rgba(100, 100, 111, 0.473) 0px 7px 29px 0px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    
+    .btn-back a img {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .btn-back span {
+        font-size: 14px;
+    }
+    
+    .config-container .config-title {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    
+    .config-container .bg-config {
+        display: flex;
+        height: 100%;
+        width: 85vw;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .bg-config .bg-config-color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-config);
+        padding: 15px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        gap: 0.5rem;
+        margin: 20px;
+    }
+    
+    .config-container .bg-config-color-title {
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        gap: 10px;
+    }
+    
+    .config-container .bg-config-color-title img {
+        height: 22px;
+        width: 22px;
+    }
+    
+    .config-container .bg-config-color-title h3 {
+        font-size: 18px;
+    }
+    
+    .config-container .bg-config-colors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .config-container .bg-config-color button {
+        padding: 23px;
+        border-radius: 10px;
+        border: none;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+    }
+    
+    
+    .config-container .config-song {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: var(--bg-config);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        transition: ease-in-out;
+    }
+    
+    
+    .config-container .config-song .config-song-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .config-container .config-song .config-song-title h3 {
+        font-size: 18px;
+    }
+    
+    .config-container .config-song .config-song-title img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    
+    .config-container .config-song ul li div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        gap: 15px;
+        box-shadow: rgba(100, 100, 111, 0.11) 0px 7px 29px 0px;
+        padding: 5px;
+        transition: 200ms ease-in-out;
+    }
+    
+    
+    .config-container .config-song ul li div img {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .config-container .config-song ul li div p {
+        font-size: 15px;
+    }
+    
+    .config-container .config-song ul li div button {
+        border-radius: 100%;
+        border: none;
+        padding: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        background: none;
+        cursor: pointer;
+        transition: 200ms ease-in-out;
+        box-shadow: rgba(100, 100, 111, 0.479) 0px 7px 29px 0px;
+    }
+    
+    .config-container .config-song ul li div button img {
+        display: flex;
+        width: 12px;
+        height: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+}
