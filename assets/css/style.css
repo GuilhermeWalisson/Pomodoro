@@ -82,6 +82,7 @@ header nav ul li .btn-config {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 header nav ul li .btn-config img {
