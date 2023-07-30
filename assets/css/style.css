@@ -96,6 +96,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.time {
     margin-top: 5rem;
 }
 
@@ -188,6 +191,35 @@ main {
     flex-direction: column;
 }
 
+.btn-back {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    margin: 40px;
+    gap: 10px;
+}
+
+.btn-back a {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-shadow: rgba(100, 100, 111, 0.473) 0px 7px 29px 0px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.btn-back a img {
+    height: 40px;
+    width: 40px;
+}
+
+.btn-back span {
+    font-size: 1rem;
+}
+
 .config-container .config-title {
     font-size: 18px;
     margin-bottom: 25px;
@@ -275,7 +307,7 @@ main {
 
 .config-container .config-song {
     width: 100%;
-    height: 0 auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
