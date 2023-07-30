@@ -1,6 +1,8 @@
 # ⏰ Pomodoro Online
 site de *pomodoro online*.
 
+### ⚠ Não esta responsivo(Por equanto) 
+
 [Link do Site](https://pomodoro-online-time.netlify.app/)
 
 ## 🔧 Desenvolvido com:
