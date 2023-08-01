@@ -64,7 +64,7 @@ function pomodoro(tempo) {
       sMin.innerText = min;
       sSec.innerText = ":" + sec;
 
-      document.title = `${min}:${sec}`;
+      document.title = `${min}:${sec} - PomoTime`;
 
       segundos--;
     }
